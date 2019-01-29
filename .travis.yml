@@ -17,7 +17,7 @@ install:
 
 script:
 - python SmartHanger_vs/manage.py test
-- python -m pytest -v SmartHanger_vs/gateway/tests.py
+# - python -m pytest -v SmartHanger_vs/gateway/tests.py
 
 
 deploy:
