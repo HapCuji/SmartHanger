@@ -1,0 +1,92 @@
+﻿ul.menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+.dust {
+    background: url("../images/sign/dust.png") no-repeat;
+}
+.costs {
+    background: url("../images/sign/costs.png");
+}
+.color {
+    background: url("../images/sign/color_choose.png");
+}
+.size {
+    background: url("../images/sign/size_s.png");
+}
+
+.helper {
+    background: url("../images/sign/helper.png");
+}
+.empty {
+    opacity: 0;
+}
+
+
+
+ul.menu li {
+    list-style: none;
+    position: relative;
+    min-width: 120px;
+    min-height: 120px;
+    display: block;
+    border-radius: 15px;
+    padding: 5px;
+    background-size: cover;
+}
+
+            ul.menu li a:hover {
+                background-color: #b00000;
+            }
+
+        ul.menu li:first-child a {
+            border-top: none;
+        }
+
+            ul.menu li:first-child a:hover {
+                border-radius: 5px 5px 0 0;
+                -webkit-border-radius: 5px 5px 0 0;
+                -moz-border-radius: 5px 5px 0 0;
+            }
+
+        ul.menu li:last-child a:hover {
+            border-radius: 0 0 5px 5px;
+            -webkit-border-radius: 0 0 5px 5px;
+            -moz-border-radius: 0 0 5px 5px;
+        }
+
+    ul.menu li ul {
+        padding: 10px 12px 12px;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: none;
+
+        display: none;
+    }
+
+        ul.menu li:hover ul {
+            display: block;
+            position: absolute;
+            left: 120px;
+            z-index: 1000;
+            border-radius: 0 5px 5px 0;
+            -webkit-border-radius: 0 5px 5px 0;
+            -moz-border-radius: 0 5px 5px 0;
+        }
+
+            ul.menu li:hover ul li:first-child a:hover {
+                border-radius: 0 5px 0 0;
+                -webkit-border-radius: 0 5px 0 0;
+                -moz-border-radius: 0 5px 0 0;
+            }
+
+            ul.menu li:hover ul li:last-child a:hover {
+                border-radius: 0 0 5px 0;
+                -webkit-border-radius: 0 0 5px 0;
+                -moz-border-radius: 0 0 5px 0;
+            }

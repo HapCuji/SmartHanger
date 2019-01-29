@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>agregator</Name>
+    <RootNamespace>SmartHanger_vs</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e03f6c7c-8e4c-4cd2-96d9-9cd9b373932c}</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>SmartHanger_vs.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="gateway\migrations\__init__.py" />
+    <Compile Include="gateway\migrations\0001_initial.py" />
+    <Compile Include="gateway\admin.py" />
+    <Compile Include="gateway\forms.py" />
+    <Compile Include="gateway\models.py" />
+    <Compile Include="gateway\tests.py" />
+    <Compile Include="gateway\urls.py" />
+    <Compile Include="gateway\views.py" />
+    <Compile Include="gateway\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="SmartHanger_vs\__init__.py" />
+    <Compile Include="SmartHanger_vs\settings.py" />
+    <Compile Include="SmartHanger_vs\urls.py" />
+    <Compile Include="SmartHanger_vs\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="gateway\" />
+    <Folder Include="gateway\migrations\" />
+    <Folder Include="gateway\static\" />
+    <Folder Include="gateway\static\app\" />
+    <Folder Include="gateway\static\app\content\" />
+    <Folder Include="gateway\static\app\fonts\" />
+    <Folder Include="gateway\static\app\scripts\" />
+    <Folder Include="gateway\static\gateway\" />
+    <Folder Include="gateway\static\gateway\content\" />
+    <Folder Include="gateway\static\gateway\fonts\" />
+    <Folder Include="gateway\static\gateway\images\" />
+    <Folder Include="gateway\static\gateway\images\sign\" />
+    <Folder Include="gateway\static\gateway\images\thumbs\" />
+    <Folder Include="gateway\static\gateway\scripts\" />
+    <Folder Include="gateway\templates\" />
+    <Folder Include="gateway\templates\gateway\" />
+    <Folder Include="SmartHanger_vs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.sqlite3" />
+    <Content Include="gateway\static\gateway\content\bootstrap.css" />
+    <Content Include="gateway\static\gateway\content\bootstrap.min.css" />
+    <Content Include="gateway\static\gateway\content\menu_new.css" />
+    <Content Include="gateway\static\gateway\content\search_new.css" />
+    <Content Include="gateway\static\gateway\content\site.css" />
+    <Content Include="gateway\static\gateway\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="gateway\static\gateway\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="gateway\static\gateway\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="gateway\static\gateway\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="gateway\static\gateway\images\bg.jpg" />
+    <Content Include="gateway\static\gateway\images\bg2.jpg" />
+    <Content Include="gateway\static\gateway\images\bg_main.jpg" />
+    <Content Include="gateway\static\gateway\images\sign\.DS_Store" />
+    <Content Include="gateway\static\gateway\images\sign\color.psd" />
+    <Content Include="gateway\static\gateway\images\sign\color_choose.png" />
+    <Content Include="gateway\static\gateway\images\sign\costs.png" />
+    <Content Include="gateway\static\gateway\images\sign\costs.psd" />
+    <Content Include="gateway\static\gateway\images\sign\dust.png" />
+    <Content Include="gateway\static\gateway\images\sign\dust.psd" />
+    <Content Include="gateway\static\gateway\images\sign\helper.png" />
+    <Content Include="gateway\static\gateway\images\sign\helper.psd" />
+    <Content Include="gateway\static\gateway\images\sign\size.s.psd" />
+    <Content Include="gateway\static\gateway\images\sign\size_s.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\.DS_Store" />
+    <Content Include="gateway\static\gateway\images\thumbs\AnimatedHeaderBackgrounds.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\ArrowNavigationStyles.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\ArticleIntroEffects.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\DraggableDualViewSlideshow.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\FreebieHalcyonDays.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\HoverEffectsIdeasNew.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\NotificationStyles.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\OffCanvas.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\PagePreloadingEffect.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\ResponsiveSVGs.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\TabStyles.png" />
+    <Content Include="gateway\static\gateway\images\thumbs\TooltipStylesInspiration.png" />
+    <Content Include="gateway\static\gateway\images\wood.jpg" />
+    <None Include="gateway\static\gateway\scripts\_references.js" />
+    <Content Include="gateway\static\gateway\scripts\bootstrap.js" />
+    <Content Include="gateway\static\gateway\scripts\bootstrap.min.js" />
+    <Content Include="gateway\static\gateway\scripts\classie.js" />
+    <None Include="gateway\static\gateway\scripts\jquery.validate-vsdoc.js" />
+    <None Include="gateway\static\gateway\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery-1.10.2.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery-1.10.2.min.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery-1.10.2.min.map" />
+    <Content Include="gateway\static\gateway\scripts\jquery.validate.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery.validate.min.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="gateway\static\gateway\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="gateway\static\gateway\scripts\modernizr-2.6.2.js" />
+    <Content Include="gateway\static\gateway\scripts\morphsearch_my.js" />
+    <Content Include="gateway\static\gateway\scripts\respond.js" />
+    <Content Include="gateway\static\gateway\scripts\respond.min.js" />
+    <Content Include="requirements.txt" />
+    <Content Include="gateway\samples.json" />
+    <Content Include="gateway\templates\gateway\details.html" />
+    <Content Include="gateway\templates\gateway\results.html" />
+    <Content Include="gateway\static\app\content\bootstrap.min.css" />
+    <Content Include="gateway\static\app\content\site.css" />
+    <Content Include="gateway\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="gateway\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="gateway\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="gateway\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="gateway\static\app\scripts\bootstrap.js" />
+    <Content Include="gateway\static\app\scripts\bootstrap.min.js" />
+    <Content Include="gateway\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="gateway\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="gateway\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="gateway\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="gateway\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="gateway\static\app\scripts\jquery.validate.js" />
+    <Content Include="gateway\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="gateway\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="gateway\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="gateway\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="gateway\static\app\scripts\respond.js" />
+    <Content Include="gateway\static\app\scripts\respond.min.js" />
+    <Content Include="gateway\static\app\scripts\_references.js" />
+    <Content Include="gateway\templates\gateway\about.html" />
+    <Content Include="gateway\templates\gateway\contact.html" />
+    <Content Include="gateway\templates\gateway\index.html" />
+    <Content Include="gateway\templates\gateway\layout.html" />
+    <Content Include="gateway\templates\gateway\login.html" />
+    <Content Include="gateway\templates\gateway\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

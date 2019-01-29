@@ -1,0 +1,5 @@
+*.mypy_cache
+*.vs
+product/obj
+product/env
+SmartHanger_vs/obj

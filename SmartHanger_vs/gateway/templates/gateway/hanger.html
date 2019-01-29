@@ -1,0 +1,111 @@
+﻿{% extends "gateway/layout.html" %}
+
+{% load staticfiles %}
+{% block style_load %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'gateway/content/search_new.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'gateway/content/menu_new.css' %}" />
+
+{% endblock %}
+
+{% block li_nav_bar %}
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <input class="morphsearch-input" type="search" placeholder="Search..." />
+        <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+        <div class="dummy-column">
+            <h2>Popular</h2>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/08/05/page-preloading-effect/">
+                <img src="{% static 'gateway/images/thumbs/' %}PagePreloadingEffect.png" alt="PagePreloadingEffect" />
+                <h3>Page Preloading Effect</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/05/28/arrow-navigation-styles/">
+                <img src="{% static 'gateway/images/thumbs/' %}ArrowNavigationStyles.png" alt="ArrowNavigationStyles" />
+                <h3>Arrow Navigation Styles</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/">
+                <img src="{% static 'gateway/images/thumbs/' %}HoverEffectsIdeasNew.png" alt="HoverEffectsIdeasNew" />
+                <h3>Ideas for Subtle Hover Effects</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/">
+                <img src="{% static 'gateway/images/thumbs/' %}FreebieHalcyonDays.png" alt="FreebieHalcyonDays" />
+                <h3>Halcyon Days Template</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/">
+                <img src="{% static 'gateway/images/thumbs/' %}ArticleIntroEffects.png" alt="ArticleIntroEffects" />
+                <h3>Inspiration for Article Intro Effects</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/06/26/draggable-dual-view-slideshow/">
+                <img src="{% static 'gateway/images/thumbs/' %}DraggableDualViewSlideshow.png" alt="DraggableDualViewSlideshow" />
+                <h3>Draggable Dual-View Slideshow</h3>
+            </a>
+        </div>
+        <div class="dummy-column">
+            <h2>Recent</h2>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
+                <img src="{% static 'gateway/images/thumbs/' %}TooltipStylesInspiration.png" alt="TooltipStylesInspiration" />
+                <h3>Tooltip Styles Inspiration</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/09/23/animated-background-headers/">
+                <img src="{% static 'gateway/images/thumbs/' %}AnimatedHeaderBackgrounds.png" alt="AnimatedHeaderBackgrounds" />
+                <h3>Animated Background Headers</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/">
+                <img src="{% static 'gateway/images/thumbs/' %}OffCanvas.png" alt="OffCanvas" />
+                <h3>Off-Canvas Menu Effects</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/">
+                <img src="{% static 'gateway/images/thumbs/' %}TabStyles.png" alt="TabStyles" />
+                <h3>Tab Styles Inspiration</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">
+                <img src="{% static 'gateway/images/thumbs/' %}ResponsiveSVGs.png" alt="ResponsiveSVGs" />
+                <h3>Make SVGs Responsive with CSS</h3>
+            </a>
+            <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/07/23/notification-styles-inspiration/">
+                <img src="{% static 'gateway/images/thumbs/' %}NotificationStyles.png" alt="NotificationStyles" />
+                <h3>Notification Styles Inspiration</h3>
+            </a>
+        </div>
+    </div><!-- /morphsearch-content -->
+    <span class="morphsearch-close"></span>
+</div><!-- /morphsearch -->
+{% endblock %}
+
+{% block content %}
+
+<ul class="menu">
+    <a href="" data-title="You choosed"><li class="dust" ></li></a>
+    <li class="empty"></li>
+    <a href="" data-title="Цена"> <li class="costs"></li> </a>
+    <li class="color" data-title="Цвет">
+        <ul>
+            <li><a href="/">Другой цвет 1</li>
+            <li><a href="/">Другой цвет 2</a></li>
+            <li><a href="/">Другой цвет 3</a></li>
+        </ul>
+    </li>
+    <li class="size" data-title="Размер">
+        <ul>
+            <li><a href="/"> Размер S</li>
+            <li><a href="/"> Размер M</a></li>
+            <li><a href="/"> Размер XL</a></li>
+        </ul>
+    </li>
+    <a href="/"><li class="helper" data-title="Вызвать консультанта"></li></a>
+</ul>
+<aside class="sidebar clearfix"></aside>
+
+<div class="overlay"></div>
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% load staticfiles %}
+<script src="{% static 'gateway/scripts/classie.js' %}"></script>
+<script src="{% static 'gateway/scripts/morphsearch_my.js' %}"></script>
+
+{% endblock %}

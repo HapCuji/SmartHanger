@@ -1,0 +1,36 @@
+sudo: required
+
+language: python
+python:
+- '3.6'
+
+env:
+#- DJANGO_VERSION=2.1.4
+#- DJANGO=1.11.2
+- DJANGO=2.1.4
+-
+install:
+- pip install --upgrade pip
+- pip install -q django==$DJANGO
+- pip install -r SmartHanger_vs/requirements.txt
+#- pip install -q Django==$DJANGO_VERSION
+
+script:
+- python SmartHanger_vs/manage.py test
+- python -m pytest -v SmartHanger_vs/gateway/tests.py
+
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app:
+#    master: $HEROKU_APP_NAME
+    lab_2: $HEROKU_APP_NAME
+
+  #on:
+    #repo: HapCuji/DSIP
+  #run: "rake db:migrate"
+    
+notifications:
+  email: false
